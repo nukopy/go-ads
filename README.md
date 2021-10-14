@@ -4,7 +4,7 @@
 
 [![codecov](https://codecov.io/gh/nukopy/go-ads/branch/master/graph/badge.svg?token=KCVIHBVKXQ)](https://codecov.io/gh/nukopy/go-ads)
 
-Implementation of algorithms and data structures with Go
+Algorithms and data structures in Go
 
 ## List of Algorithms and Data Structures
 
