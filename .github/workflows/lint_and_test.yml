@@ -28,7 +28,7 @@ jobs:
         uses: golangci/golangci-lint-action@v2
         with:
           version: v1.42.1
-          args: --enable=golint,gosec,prealloc,gocognit
+          args: --enable=gofmt,govet,gosec,prealloc,gocognit
 
   test:
     name: Test
