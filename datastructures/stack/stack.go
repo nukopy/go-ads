@@ -15,6 +15,11 @@ func New() *Stack {
 	return &Stack{nil, 0}
 }
 
+// Check if stack is empty
+func (s *Stack) IsEmpty() bool {
+	return s.length == 0
+}
+
 // Get length of stack
 func (s *Stack) Len() int {
 	return s.length
@@ -22,7 +27,7 @@ func (s *Stack) Len() int {
 
 // Get top element of stack
 func (s *Stack) Top() interface{} {
-	if s.length == 0 {
+	if s.IsEmpty() {
 		return nil
 	}
 	return s.top.value
@@ -34,9 +39,9 @@ func (s *Stack) Push(v interface{}) {
 	s.length++
 }
 
-// Pop a element of top of stack
+// Pop a element from stack
 func (s *Stack) Pop() interface{} {
-	if s.length == 0 {
+	if s.IsEmpty() {
 		return nil
 	}
 	top := s.top.value

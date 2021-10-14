@@ -23,17 +23,20 @@ func TestStack(t *testing.T) {
 	// test Pop
 	s.Pop()
 	v1 := s.Pop()
-	if v1 == nil || v1 != 3 {
+	if v1 != 3 {
 		t.Errorf("v1 should be 3, got %d", v1)
 	}
 	if s.Len() != 1 {
 		t.Errorf("Length of stack should be 1, got %d", s.Len())
 	}
 
-	// test Pop of empty stack
-	s.Pop()
+	// test Pop from empty stack
+	s.Pop() // stack should be empty
 	v2 := s.Pop()
-	if v2 != nil && s.Len() != 0 {
+	if v2 != nil {
 		t.Errorf("Value of pop of empty stack should be nil, got %d", v2)
+	}
+	if s.IsEmpty() == false {
+		t.Errorf("Stack should be empty, got %t", s.IsEmpty())
 	}
 }
