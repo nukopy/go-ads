@@ -15,14 +15,14 @@ func New() *Stack {
 	return &Stack{nil, 0}
 }
 
-// Check if stack is empty
-func (s *Stack) IsEmpty() bool {
-	return s.length == 0
-}
-
 // Get length of stack
 func (s *Stack) Len() int {
 	return s.length
+}
+
+// Check if stack is empty
+func (s *Stack) IsEmpty() bool {
+	return s.length == 0
 }
 
 // Get top element of stack
