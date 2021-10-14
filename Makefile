@@ -1,5 +1,9 @@
 .DEFAULT_GOAL := help
 
+.PHONY: format
+format: ## format code with gofmt
+	gofmt -l -w .
+
 .PHONY: lint
 lint: ## run lint
 	golangci-lint run --enable=gofmt,govet,gosec,prealloc,gocognit
