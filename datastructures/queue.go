@@ -1,3 +1,3 @@
 package datastructures
 
-type Queue struct {}
+type Queue struct{}

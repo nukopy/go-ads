@@ -1,6 +1,6 @@
 package datastructures
 
-type Stack struct {}
+type Stack struct{}
 
 func (s *Stack) New() *Stack {
 	return &Stack{}

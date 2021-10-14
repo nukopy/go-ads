@@ -1,3 +1,3 @@
 package datastructures
 
-type List struct {}
+type List struct{}
