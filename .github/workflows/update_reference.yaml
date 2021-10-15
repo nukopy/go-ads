@@ -1,0 +1,19 @@
+name: update_reference
+on:
+  # release:
+  #   types:
+  #     - created
+  push:
+    tags:
+      - 'v*'
+      - '**/v*'
+
+# todo: GitHub リリースに連動させたい
+# tag が push されたら pkg.go.dev を更新する
+jobs:
+  build:
+    name: Update documentation in pkg.go.dev
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull new module version
+        uses: andrewslotin/go-proxy-pull-action@master
