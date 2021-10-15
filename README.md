@@ -26,5 +26,13 @@ todo
 
 ## References
 
-- golang-collections
+- Documents
   - [stack](https://pkg.go.dev/github.com/golang-collections/collections/stack)
+- Repositories
+  - [arnauddri/algorithms](https://github.com/arnauddri/algorithms)
+    - tests exist
+  - [floyernick/Data-Structures-and-Algorithms](https://github.com/floyernick/Data-Structures-and-Algorithms)
+    - tests of algorithms exist but those of data structures do not
+  - [atcoder/ac-library](https://github.com/atcoder/ac-library)
+  - [monkukui/ac-library-go](https://github.com/monkukui/ac-library-go)
+  - [kmyk/competitive-programming-library](https://github.com/kmyk/competitive-programming-library)
