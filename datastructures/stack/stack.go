@@ -5,6 +5,7 @@ type Stack struct {
 	length int
 }
 
+// Element of stack
 type Element struct {
 	value interface{}
 	prev  *Element
@@ -16,16 +17,19 @@ func New() *Stack {
 }
 
 // Get length of stack
+// Complexity: O(1)
 func (s *Stack) Len() int {
 	return s.length
 }
 
 // Check if stack is empty
+// Complexity: O(1)
 func (s *Stack) IsEmpty() bool {
 	return s.length == 0
 }
 
 // Get top element of stack
+// Complexity: O(1)
 func (s *Stack) Top() interface{} {
 	if s.IsEmpty() {
 		return nil
@@ -34,12 +38,14 @@ func (s *Stack) Top() interface{} {
 }
 
 // Push a element to top of stack
+// Complexity: O(1)
 func (s *Stack) Push(v interface{}) {
 	s.top = &Element{v, s.top}
 	s.length++
 }
 
 // Pop a element from stack
+// Complexity: O(1)
 func (s *Stack) Pop() interface{} {
 	if s.IsEmpty() {
 		return nil

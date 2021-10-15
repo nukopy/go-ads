@@ -8,6 +8,7 @@ type Queue struct {
 	length int
 }
 
+// Element of queue
 type Element struct {
 	value interface{}
 	next  *Element
