@@ -9,13 +9,10 @@ Algorithms and data structures in Go
 The list of algorithms and data structures implemented in go-ads is as follows:
 
 - algorithms
-  - a
-  - b
-  - c
+  - todo
 - data structures
-  - a
-  - b
-  - c
+  - stack
+  - queue
 
 ## How to Use
 
