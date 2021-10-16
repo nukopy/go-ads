@@ -1,6 +1,9 @@
 # go-ads
 
-[![Go Reference](https://pkg.go.dev/badge/nukopy/go-ads.svg)](https://pkg.go.dev/nukopy/go-ads) [![Version](https://img.shields.io/github/v/release/nukopy/go-ads)](https://img.shields.io/github/v/release/nukopy/go-ads) [![.github/workflows/lint_and_test.yml](https://github.com/nukopy/go-ads/actions/workflows/lint_and_test.yml/badge.svg)](https://github.com/nukopy/go-ads/actions/workflows/lint_and_test.yml) [![codecov](https://codecov.io/gh/nukopy/go-ads/branch/master/graph/badge.svg?token=KCVIHBVKXQ)](https://codecov.io/gh/nukopy/go-ads)
+[![Go Reference](https://pkg.go.dev/badge/nukopy/go-ads.svg)](https://pkg.go.dev/nukopy/go-ads)
+[![Release Version](https://img.shields.io/github/release/nukopy/go-ads.svg?style=flat)](https://github.com/nukopy/go-ads/releases)
+[![.github/workflows/lint_and_test.yml](https://github.com/nukopy/go-ads/actions/workflows/lint_and_test.yml/badge.svg)](https://github.com/nukopy/go-ads/actions/workflows/lint_and_test.yml)
+[![codecov](https://codecov.io/gh/nukopy/go-ads/branch/master/graph/badge.svg?token=KCVIHBVKXQ)](https://codecov.io/gh/nukopy/go-ads)
 
 Algorithms and Data Structures in Go
 
