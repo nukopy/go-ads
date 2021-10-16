@@ -21,13 +21,13 @@ test-with-coverage: ## run test with coverage for Codecov
 	go test -v ./... -count=1 -covermode=atomic -coverprofile=profile.out
 
 .PHONY: release
-release:  ## release by git tag
+release:  ## release by git tag: "make release VERSION=v0.1.0"
 	git commit --allow-empty -m "Release $(VERSION):tada:"
 	git tag -a $(VERSION) -m "Release $(VERSION):tada:"
 	git push origin $(VERSION)
 
 .PHONY: unrelease
-unrelease:  ## unrelease by git tag
+unrelease:  ## unrelease by git tag: : "make unrelease VERSION=v0.1.0"
 	git tag -d $(VERSION)
 	git push origin :$(VERSION)
 
