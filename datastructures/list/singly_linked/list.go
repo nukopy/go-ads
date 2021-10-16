@@ -2,15 +2,14 @@ package singly_linked
 
 type List struct {
 	head, tail *Node
-	length int
+	length     int
 }
 
 // Node of singly linked list
 type Node struct {
 	value interface{}
-	next *Node
+	next  *Node
 }
-
 
 // Get length of list
 func (l *List) Len() int {

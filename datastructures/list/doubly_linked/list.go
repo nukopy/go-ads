@@ -2,12 +2,12 @@ package doubly_linked
 
 type List struct {
 	head, tail *Node
-	length int
+	length     int
 }
 
 // Node of doubly linked list
 type Node struct {
-	value interface{}
+	value      interface{}
 	next, prev *Node
 }
 
@@ -36,11 +36,11 @@ func (l *List) GetByIdx(idx int) interface{} {
 	if idx < 0 || idx >= l.length {
 		return nil
 	}
-// 	cur := l.head
-// 	for i := 0; i < idx; i++ {
-// 		cur = cur.next
-// 	}
-// 	return cur.value
+	// 	cur := l.head
+	// 	for i := 0; i < idx; i++ {
+	// 		cur = cur.next
+	// 	}
+	// 	return cur.value
 	return nil
 }
 
