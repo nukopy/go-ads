@@ -1,15 +1,12 @@
 name: update_reference
 on:
-  # release:
-  #   types:
-  #     - created
-  push:
+  release:
+    types:
+      - released
     tags:
       - 'v*'
-      - '**/v*'
 
-# todo: GitHub リリースに連動させたい
-# tag が push されたら pkg.go.dev を更新する
+# GitHub 上で release されたら pkg.go.dev を更新する
 jobs:
   build:
     name: Update documentation in pkg.go.dev
