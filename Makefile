@@ -20,6 +20,12 @@ test: ## run test
 test-with-coverage: ## run test with coverage for Codecov
 	go test -v ./... -count=1 -covermode=atomic -coverprofile=profile.out
 
+.PHONY: before-push
+before-push: ## run before push
+	make format
+	make test
+	make test-with-coverage
+
 .PHONY: release
 release:  ## release by git tag: "make release VERSION=v0.1.0"
 	git commit --allow-empty -m "Release $(VERSION):tada:"
